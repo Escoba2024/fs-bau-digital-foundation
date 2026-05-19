@@ -1,0 +1,1 @@
+drop policy if exists "Anyone can submit a contact request" on public.contact_requests;
