@@ -14,7 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      contact_requests: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          message: string
+          name: string
+          phone: string | null
+          project_type: Database["public"]["Enums"]["project_type"]
+          service: Database["public"]["Enums"]["service_type"]
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          message: string
+          name: string
+          phone?: string | null
+          project_type: Database["public"]["Enums"]["project_type"]
+          service: Database["public"]["Enums"]["service_type"]
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string
+          name?: string
+          phone?: string | null
+          project_type?: Database["public"]["Enums"]["project_type"]
+          service?: Database["public"]["Enums"]["service_type"]
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -23,7 +55,8 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      project_type: "privat" | "gewerbe" | "kommune"
+      service_type: "tiefbau" | "erdbau" | "abbruch" | "galabau" | "sonstiges"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +183,9 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      project_type: ["privat", "gewerbe", "kommune"],
+      service_type: ["tiefbau", "erdbau", "abbruch", "galabau", "sonstiges"],
+    },
   },
 } as const
