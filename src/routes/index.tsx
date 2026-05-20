@@ -68,14 +68,13 @@ function HomePage() {
               Meisterbetrieb · Kreis Altenkirchen · Westerwald
             </div>
             <h1 className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05]">
-              Tiefbau, Erdbau, Abbruch &{" "}
-              <span className="text-gradient-primary">GalaBau</span>{" "}
-              aus dem Westerwald.
+              <span className="text-gradient-primary">Tiefbau</span> in Altenkirchen
+              <span className="block">& Westerwald.</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              FS-BAU GmbH — Ihr Meisterbetrieb für anspruchsvolle Bauleistungen.
-              Präzise geplant, termintreu ausgeführt. Für private Auftraggeber,
-              Gewerbe und Kommunen — regional verwurzelt, überregional aktiv.
+              FS-BAU GmbH — Ihr Meisterbetrieb für Tiefbau, Erdbau, Abbruch
+              und GalaBau im Kreis Altenkirchen. Präzise geplant, termintreu
+              ausgeführt — für private Auftraggeber, Gewerbe und Kommunen.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="shadow-glow">
