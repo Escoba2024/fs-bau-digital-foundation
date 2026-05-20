@@ -4,13 +4,13 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/impressum")({
   head: () => ({
     meta: [
-      { title: "Impressum | FS-BAU GmbH" },
-      { name: "description", content: "Impressum und Anbieterkennzeichnung der FS-BAU GmbH, Meisterbetrieb für Tiefbau, Erdbau, Abbruch und GalaBau." },
+      { title: "Impressum | FS-BAU GmbH — Tiefbau Altenkirchen" },
+      { name: "description", content: "Impressum und Anbieterkennzeichnung der FS-BAU GmbH, Meisterbetrieb für Tiefbau in Altenkirchen sowie Erdbau, Abbruch und GalaBau." },
       { property: "og:title", content: "Impressum — FS-BAU GmbH" },
-      { property: "og:url", content: "/impressum" },
+      { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/impressum" },
       { name: "robots", content: "index,follow" },
     ],
-    links: [{ rel: "canonical", href: "/impressum" }],
+    links: [{ rel: "canonical", href: "https://westerwald-builder-pro.lovable.app/impressum" }],
   }),
   component: ImpressumPage,
 });

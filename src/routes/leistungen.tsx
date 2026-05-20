@@ -138,11 +138,12 @@ function ServicesPage() {
         <div className="container-page py-16 md:py-20">
           <p className="text-xs uppercase tracking-[0.2em] text-primary">Leistungen</p>
           <h1 className="mt-2 font-display text-4xl md:text-5xl font-bold max-w-3xl">
-            Vier Gewerke aus einer Hand — vom Meisterbetrieb FS-BAU.
+            Tiefbau in Altenkirchen — vier Gewerke aus einer Hand.
           </h1>
           <p className="mt-5 max-w-2xl text-muted-foreground text-lg leading-relaxed">
-            Tiefbau, Erdbau, Abbruch und GalaBau aus dem Kreis Altenkirchen.
-            Eine Bauleitung, ein verlässliches Team — vom Aufmaß bis zur Abnahme.
+            Tiefbau, Erdbau, Abbruch und GalaBau im Kreis Altenkirchen und
+            Westerwald. Eine Bauleitung, ein verlässliches Team vom Meisterbetrieb
+            FS-BAU — vom Aufmaß bis zur Abnahme.
           </p>
 
           <nav className="mt-8 flex flex-wrap gap-2">
