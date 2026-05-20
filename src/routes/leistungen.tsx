@@ -187,6 +187,17 @@ function ServicesPage() {
             </div>
 
             <div>
+              <div className="relative overflow-hidden rounded-2xl border border-border aspect-[16/10] mb-8">
+                <img
+                  src={s.image}
+                  alt={`${s.title} — FS-BAU GmbH`}
+                  width={1600}
+                  height={1024}
+                  loading="lazy"
+                  className="size-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" aria-hidden />
+              </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 {s.description.map((p, idx) => (
                   <p key={idx}>{p}</p>
