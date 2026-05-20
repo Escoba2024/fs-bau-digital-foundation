@@ -6,13 +6,14 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
     meta: [
-      { title: "Kontakt & Anfrage — Tiefbau, Erdbau, Abbruch, GalaBau | FS-BAU GmbH" },
-      { name: "description", content: "Kontaktieren Sie den Meisterbetrieb FS-BAU GmbH im Kreis Altenkirchen für Tiefbau, Erdbau, Abbruch und GalaBau. Anfrage in unter 60 Sekunden." },
-      { property: "og:title", content: "Kontakt & Anfrage — FS-BAU GmbH" },
-      { property: "og:description", content: "Direkte Anfrage an den Meisterbetrieb für Tiefbau, Erdbau, Abbruch und GalaBau." },
-      { property: "og:url", content: "/kontakt" },
+      { title: "Kontakt — Tiefbau Altenkirchen anfragen | FS-BAU GmbH" },
+      { name: "description", content: "Tiefbau in Altenkirchen anfragen: Kontaktieren Sie den Meisterbetrieb FS-BAU GmbH für Kanalbau, Hausanschlüsse, Erdbau, Abbruch und GalaBau — Antwort in 1–2 Werktagen." },
+      { name: "keywords", content: "Tiefbau Altenkirchen Kontakt, Tiefbauunternehmen anfragen, Bauanfrage Westerwald" },
+      { property: "og:title", content: "Tiefbau Altenkirchen anfragen — FS-BAU GmbH" },
+      { property: "og:description", content: "Direkte Anfrage an den Meisterbetrieb FS-BAU für Tiefbau, Erdbau, Abbruch und GalaBau im Kreis Altenkirchen." },
+      { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/kontakt" },
     ],
-    links: [{ rel: "canonical", href: "/kontakt" }],
+    links: [{ rel: "canonical", href: "https://westerwald-builder-pro.lovable.app/kontakt" }],
   }),
   component: ContactPage,
 });
@@ -24,11 +25,12 @@ function ContactPage() {
         <div className="container-page py-16 md:py-20">
           <p className="text-xs uppercase tracking-[0.2em] text-primary">Kontakt</p>
           <h1 className="mt-2 font-display text-4xl md:text-5xl font-bold max-w-3xl">
-            Sprechen Sie mit dem Meisterbetrieb.
+            Tiefbau in Altenkirchen anfragen.
           </h1>
           <p className="mt-5 max-w-2xl text-muted-foreground text-lg leading-relaxed">
-            Beschreiben Sie kurz Ihr Vorhaben — Projekttyp, gewünschte Leistung und Zeitrahmen.
-            Wir melden uns innerhalb von 1–2 Werktagen mit einer ehrlichen Ersteinschätzung.
+            Beschreiben Sie kurz Ihr Vorhaben — Projekttyp, gewünschte Leistung
+            und Zeitrahmen. Der Meisterbetrieb FS-BAU GmbH meldet sich innerhalb
+            von 1–2 Werktagen mit einer ehrlichen Ersteinschätzung.
           </p>
         </div>
       </section>

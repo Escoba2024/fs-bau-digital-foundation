@@ -4,13 +4,13 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/datenschutz")({
   head: () => ({
     meta: [
-      { title: "Datenschutzerklärung | FS-BAU GmbH" },
-      { name: "description", content: "Datenschutzerklärung der FS-BAU GmbH gemäß DSGVO — Informationen zur Verarbeitung personenbezogener Daten beim Besuch unserer Website und bei Nutzung des Kontaktformulars." },
+      { title: "Datenschutz | FS-BAU GmbH — Tiefbau Altenkirchen" },
+      { name: "description", content: "Datenschutzerklärung der FS-BAU GmbH (Meisterbetrieb für Tiefbau in Altenkirchen) gemäß DSGVO — Verarbeitung personenbezogener Daten beim Websitebesuch und Kontaktformular." },
       { property: "og:title", content: "Datenschutz — FS-BAU GmbH" },
-      { property: "og:url", content: "/datenschutz" },
+      { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/datenschutz" },
       { name: "robots", content: "index,follow" },
     ],
-    links: [{ rel: "canonical", href: "/datenschutz" }],
+    links: [{ rel: "canonical", href: "https://westerwald-builder-pro.lovable.app/datenschutz" }],
   }),
   component: DatenschutzPage,
 });

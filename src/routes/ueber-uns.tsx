@@ -5,13 +5,14 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/ueber-uns")({
   head: () => ({
     meta: [
-      { title: "Über uns — Meisterbetrieb für Tiefbau im Westerwald | FS-BAU GmbH" },
-      { name: "description", content: "FS-BAU GmbH — Meisterbetrieb aus dem Kreis Altenkirchen für Tiefbau, Erdbau, Abbruch und GalaBau. Regional verwurzelt, überregional aktiv." },
-      { property: "og:title", content: "Über uns — FS-BAU GmbH, Meisterbetrieb im Westerwald" },
-      { property: "og:description", content: "Werte, Qualifikationen und Einsatzgebiet des Meisterbetriebs FS-BAU GmbH." },
-      { property: "og:url", content: "/ueber-uns" },
+      { title: "Über uns — Tiefbau Altenkirchen, Meisterbetrieb FS-BAU GmbH" },
+      { name: "description", content: "FS-BAU GmbH — Ihr Meisterbetrieb für Tiefbau in Altenkirchen. Werte, Qualifikationen und Einsatzgebiet im Westerwald und überregional in Rheinland-Pfalz und NRW." },
+      { name: "keywords", content: "Tiefbau Altenkirchen, Tiefbaubetrieb Westerwald, Meisterbetrieb FS-BAU, Bauunternehmen Altenkirchen" },
+      { property: "og:title", content: "Über uns — Meisterbetrieb für Tiefbau in Altenkirchen" },
+      { property: "og:description", content: "Werte, Qualifikationen und Einsatzgebiet des Meisterbetriebs FS-BAU GmbH für Tiefbau im Kreis Altenkirchen." },
+      { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/ueber-uns" },
     ],
-    links: [{ rel: "canonical", href: "/ueber-uns" }],
+    links: [{ rel: "canonical", href: "https://westerwald-builder-pro.lovable.app/ueber-uns" }],
   }),
   component: AboutPage,
 });
@@ -23,7 +24,7 @@ function AboutPage() {
         <div className="container-page py-16 md:py-20">
           <p className="text-xs uppercase tracking-[0.2em] text-primary">Über FS-BAU</p>
           <h1 className="mt-2 font-display text-4xl md:text-5xl font-bold max-w-3xl">
-            Meisterbetrieb für Tiefbau aus dem Kreis Altenkirchen.
+            Tiefbau Altenkirchen — Ihr Meisterbetrieb FS-BAU GmbH.
           </h1>
           <p className="mt-5 max-w-2xl text-muted-foreground text-lg leading-relaxed">
             Wir sind FS-BAU GmbH — ein Bauunternehmen mit Meisterqualifikation, das
