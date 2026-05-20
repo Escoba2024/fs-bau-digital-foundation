@@ -1,6 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Hammer, Layers, Mountain, Sprout, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroTiefbau from "@/assets/hero-tiefbau.jpg";
+import heroErdbau from "@/assets/hero-erdbau.jpg";
+import heroAbbruch from "@/assets/hero-abbruch.jpg";
+import heroGalabau from "@/assets/hero-galabau.jpg";
 
 export const Route = createFileRoute("/leistungen")({
   head: () => ({
@@ -20,6 +24,7 @@ type Service = {
   slug: string;
   title: string;
   lead: string;
+  image: string;
   icon: React.ComponentType<{ className?: string }>;
   description: string[];
   bullets: string[];

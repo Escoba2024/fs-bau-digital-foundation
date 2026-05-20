@@ -14,6 +14,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
 import { SERVICES, AUDIENCES } from "@/lib/site";
+import heroHome from "@/assets/hero-home.jpg";
 
 const SERVICE_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   tiefbau: Layers,
@@ -41,7 +42,19 @@ function HomePage() {
     <>
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-faint" aria-hidden />
+        <img
+          src={heroHome}
+          alt="Baustelle im Westerwald — Bagger im Erdbau bei Dämmerung"
+          width={1920}
+          height={1280}
+          className="absolute inset-0 size-full object-cover opacity-40"
+          fetchPriority="high"
+        />
+        <div
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(180deg, color-mix(in oklab, var(--background) 55%, transparent) 0%, color-mix(in oklab, var(--background) 85%, transparent) 60%, var(--background) 100%)" }}
+          aria-hidden
+        />
         <div
           className="absolute -top-40 -right-40 size-[640px] rounded-full blur-3xl opacity-30"
           style={{ background: "radial-gradient(circle, var(--primary), transparent 60%)" }}
