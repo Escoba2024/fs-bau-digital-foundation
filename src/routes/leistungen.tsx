@@ -36,6 +36,7 @@ const SERVICES: Service[] = [
     slug: "tiefbau",
     title: "Tiefbau",
     icon: Layers,
+    image: heroTiefbau,
     lead: "Kanalbau, Hausanschlüsse, Leitungs- und Wegebau — vom Aufmaß bis zur Abnahme.",
     description: [
       "Tiefbau ist das Fundament jeder Erschließung. Die FS-BAU GmbH plant und realisiert Tiefbauarbeiten für Wohn-, Gewerbe- und Infrastrukturprojekte im Kreis Altenkirchen und überregional. Wir verstehen die örtlichen Bodenverhältnisse im Westerwald und arbeiten eng mit Netzbetreibern, Kommunen und Planungsbüros zusammen.",
@@ -59,6 +60,7 @@ const SERVICES: Service[] = [
     slug: "erdbau",
     title: "Erdbau",
     icon: Mountain,
+    image: heroErdbau,
     lead: "Baugrubenaushub, Geländemodellierung und Bodenverbesserung — präzise, sicher, termintreu.",
     description: [
       "Im Erdbau liefern wir die Grundlage für jedes Bauvorhaben: vom geböschten oder verbauten Baugrubenaushub über die Geländemodellierung bis zur Verdichtung des Planums. Wir arbeiten mit moderner Vermessungstechnik und 3D-Steuerung, damit Maße und Höhen vom ersten Spatenstich an stimmen.",
@@ -82,6 +84,7 @@ const SERVICES: Service[] = [
     slug: "abbruch",
     title: "Abbruch",
     icon: Hammer,
+    image: heroAbbruch,
     lead: "Selektiver Rückbau, Entkernung und fachgerechte Entsorgung — sauber dokumentiert.",
     description: [
       "Vom kleinen Nebengebäude bis zum Gewerbeobjekt: Wir führen Abbrucharbeiten kontrolliert und nach den Vorgaben der Gewerbeabfallverordnung aus. Selektiver Rückbau ist für uns Standard — Wertstoffe werden direkt auf der Baustelle getrennt, dokumentiert und einer hohen Verwertungsquote zugeführt.",
@@ -105,6 +108,7 @@ const SERVICES: Service[] = [
     slug: "galabau",
     title: "GalaBau — Garten- und Landschaftsbau",
     icon: Sprout,
+    image: heroGalabau,
     lead: "Pflasterarbeiten, Stützmauern und Außenanlagen mit handwerklicher Präzision.",
     description: [
       "Im Garten- und Landschaftsbau verbinden wir Tiefbau-Know-how mit gestalterischem Anspruch. Hof- und Einfahrtspflasterungen, Terrassen, Stützmauern und Außenanlagen entstehen auf einem fachgerecht hergestellten Unterbau — das ist die Grundlage für Langlebigkeit.",
