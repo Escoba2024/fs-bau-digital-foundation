@@ -1,7 +1,7 @@
 export const SITE = {
-  name: "FS-BAU GmbH",
-  shortName: "FS-BAU",
-  tagline: "Tiefbau, Erdbau, Abbruch & GalaBau aus dem Westerwald",
+  name: "FS-BAU GMBH",
+  shortName: "FS-BAU GMBH",
+  tagline: "Tiefbau Meisterbetrieb",
   region: "Kreis Altenkirchen / Westerwald",
   // Markierte Platzhalter — bitte ersetzen.
   address: {

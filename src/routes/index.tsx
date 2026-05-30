@@ -26,10 +26,10 @@ const SERVICE_ICONS: Record<string, React.ComponentType<{ className?: string }>>
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Tiefbau Altenkirchen — Meisterbetrieb FS-BAU GmbH | Erdbau, Abbruch & GalaBau" },
+      { title: "Tiefbau Altenkirchen | Erdbau & Abbruch | FS-BAU GmbH" },
       { name: "description", content: "Tiefbau in Altenkirchen & Westerwald: Meisterbetrieb FS-BAU GmbH für Kanalbau, Hausanschlüsse, Erdbau, Abbruch und GalaBau — für Privat, Gewerbe und Kommunen." },
       { name: "keywords", content: "Tiefbau Altenkirchen, Tiefbauunternehmen Westerwald, Kanalbau Altenkirchen, Erdbau, Abbruch, GalaBau, Meisterbetrieb" },
-      { property: "og:title", content: "Tiefbau Altenkirchen — Meisterbetrieb FS-BAU GmbH" },
+      { property: "og:title", content: "Tiefbau Altenkirchen | Erdbau & Abbruch | FS-BAU GmbH" },
       { property: "og:description", content: "Tiefbau, Erdbau, Abbruch und GalaBau aus dem Kreis Altenkirchen. Präzise geplant, termintreu ausgeführt — regional und überregional." },
       { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/" },
     ],
@@ -142,7 +142,7 @@ function HomePage() {
       <section className="border-y border-border/70 bg-[color:var(--surface)]/50">
         <div className="container-page py-20 md:py-24">
           <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.2em] text-primary">Warum FS-BAU</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-primary">Warum FS-BAU GMBH</p>
             <h2 className="mt-2 text-3xl md:text-4xl font-bold">
               Meisterqualität, die man auf der Baustelle sieht.
             </h2>

@@ -9,10 +9,10 @@ import heroGalabau from "@/assets/hero-galabau.jpg";
 export const Route = createFileRoute("/leistungen")({
   head: () => ({
     meta: [
-      { title: "Leistungen Tiefbau Altenkirchen: Erdbau, Abbruch, GalaBau | FS-BAU GmbH" },
+      { title: "Tiefbau, Erdbau & Abbruch Altenkirchen | FS-BAU GmbH" },
       { name: "description", content: "Tiefbau in Altenkirchen, Erdbau, Abbruch und GalaBau aus einer Hand. Kanalbau, Hausanschlüsse, Baugruben und Pflasterarbeiten vom Meisterbetrieb FS-BAU GmbH." },
       { name: "keywords", content: "Tiefbau Altenkirchen, Kanalbau, Hausanschluss, Erdbau Westerwald, Abbruchunternehmen, GalaBau" },
-      { property: "og:title", content: "Tiefbau Altenkirchen & weitere Leistungen — FS-BAU GmbH" },
+      { property: "og:title", content: "Tiefbau, Erdbau & Abbruch Altenkirchen | FS-BAU GmbH" },
       { property: "og:description", content: "Vier Gewerke aus einer Hand: Tiefbau, Erdbau, Abbruch und GalaBau im Kreis Altenkirchen. Fachlich fundiert, termintreu ausgeführt." },
       { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/leistungen" },
     ],

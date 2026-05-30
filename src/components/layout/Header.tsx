@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, HardHat } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetHeader } from "@/components/ui/sheet";
+import logo from "@/assets/logo.png";
 
 const NAV = [
   { to: "/", label: "Start" },
   { to: "/leistungen", label: "Leistungen" },
+  { to: "/referenzen", label: "Referenzen" },
   { to: "/ueber-uns", label: "Über uns" },
   { to: "/kontakt", label: "Kontakt" },
 ] as const;
@@ -18,12 +20,17 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/80 backdrop-blur-md">
       <div className="container-page flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5 group">
-          <span className="grid place-items-center size-9 rounded-md bg-primary text-primary-foreground shadow-glow transition-transform group-hover:scale-105">
-            <HardHat className="size-5" />
+          <span className="grid place-items-center overflow-hidden size-9 rounded-md bg-zinc-950 border border-border/50 shadow-glow transition-transform group-hover:scale-105">
+            <img src={logo} alt="FS-BAU Logo" className="size-full object-cover" />
           </span>
           <span className="flex flex-col leading-none">
-            <span className="font-display text-lg font-bold tracking-tight">FS-BAU</span>
-            <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Meisterbetrieb</span>
+            <span className="font-display text-lg font-bold tracking-tight">FS-BAU GMBH</span>
+            <span className="text-[9px] uppercase text-muted-foreground flex justify-between w-full select-none" aria-label="Tiefbau Meisterbetrieb">
+              <span className="sr-only">Tiefbau Meisterbetrieb</span>
+              {"Tiefbau Meisterbetrieb".split("").map((char, index) => (
+                <span key={index} aria-hidden="true">{char === " " ? "\u00A0" : char}</span>
+              ))}
+            </span>
           </span>
         </Link>
 
