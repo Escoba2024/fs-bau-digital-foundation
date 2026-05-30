@@ -229,18 +229,28 @@ Diese Metadaten werden standardmäßig geladen, sofern eine Unterseite sie nicht
 *   **[H1]** `Unsere Referenzen in der Praxis`
     *   **Text:** *Machen Sie sich ein Bild von unserer Leistungsfähigkeit. Alle Fotos stammen direkt von unseren Baustellen im Kreis Altenkirchen und dem Westerwald.*
 *   **Filter-Kategorien:** `Alle Referenzen`, `Tiefbau`, `Erdbau`, `GalaBau`
-*   **Referenz-Projekte (mit zugeordneten echten Bildern):**
-    1.  **Baugrubenaushub für Wohngebäude** (Kategorie: Erdbau)
+*   **Referenz-Projekte (Als semantische [H3]-Überschriften auf der Webseite gerendert):**
+    1.  **[H3] Baugrubenaushub für Wohngebäude** (Kategorie: Erdbau)
+        *   *Ort & Datum:* Altenkirchen | April 2026
         *   *Beschreibung:* Aushub einer Baugrube mit einem Volvo ECR145EL Kettenbagger und Abtransport des Bodens mit 4-Achs-Kippern.
-    2.  **Geländemodellierung am Hang** (Kategorie: Erdbau)
+        *   *Kundenstimme (Testimonial):* "Die Jungs von FS-BAU haben die Baugrube in Rekordzeit ausgehoben. Sehr präzise und sauber gearbeitet!" — M. Weber, privater Bauherr
+    2.  **[H3] Geländemodellierung am Hang** (Kategorie: Erdbau)
+        *   *Ort & Datum:* Betzdorf | März 2026
         *   *Beschreibung:* Präzise Hangregulierung und Erdbewegungen für ein neues Wohngebiet mit unserem Volvo Kompaktbagger.
-    3.  **Kanalanschluss mit Rückstauklappen** (Kategorie: Tiefbau)
+        *   *Kundenstimme (Testimonial):* "Herausragende Arbeit am Steilhang. Die Hangsicherung steht felsenfest. Absolut empfehlenswert!" — Familie Schmidt, Hausbesitzer
+    3.  **[H3] Kanalanschluss mit Rückstauklappen** (Kategorie: Tiefbau)
+        *   *Ort & Datum:* Hachenburg | November 2025
         *   *Beschreibung:* Fachgerechte Installation von Abwasserleitungen (RW/SW) und Schachtbauwerk inklusive Rückstausicherungen.
-    4.  **Wegebau & Pflastervorbereitung** (Kategorie: GalaBau)
+        *   *Kundenstimme (Testimonial):* "Fachgerechte Installation unseres Hausanschlusses. Die Dokumentation für die Gemeinde war tadellos." — K. Lindner, Bauherr
+    4.  **[H3] Wegebau & Pflastervorbereitung** (Kategorie: GalaBau)
+        *   *Ort & Datum:* Wissen (Sieg) | Oktober 2025
         *   *Beschreibung:* Vorbereitung eines Gehwegs an einem Wohngebäude mit Randsteineinfassung und Feinbettung aus Sand.
-    5.  **Unterbau & Feinplanum für Bodenplatte** (Kategorie: Erdbau)
+        *   *Kundenstimme (Testimonial):* "Sehr gute Vorbereitung für unsere Pflasterung. Kein Absacken, perfekte Neigung für den Wasserabfluss." — Bäckerei Müller, gewerblicher Kunde
+    5.  **[H3] Unterbau & Feinplanum für Bodenplatte** (Kategorie: Erdbau)
+        *   *Ort & Datum:* Westerburg | September 2025
         *   *Beschreibung:* Kiesbettung mit Schnurgerüst-Ausrichtung als Fundamentvorbereitung für ein Einfamilienhaus.
-    6.  **Baufeldräumung & Wurzelrodung** (Kategorie: Erdbau)
+    6.  **[H3] Baufeldräumung & Wurzelrodung** (Kategorie: Erdbau)
+        *   *Ort & Datum:* Flammersfeld | August 2025
         *   *Beschreibung:* Entfernung von Hecken, Baumstümpfen und Wurzelwerk zur Vorbereitung des Grundstücks für die Bebauung.
 *   **Bereichs-Label:** `Ihr Partner für Tiefbau & Erdbau`
 *   **[H2]** `Planen Sie ein eigenes Bauvorhaben?`

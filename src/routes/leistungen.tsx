@@ -14,9 +14,9 @@ export const Route = createFileRoute("/leistungen")({
       { name: "keywords", content: "Tiefbau Altenkirchen, Kanalbau, Hausanschluss, Erdbau Westerwald, Abbruchunternehmen, GalaBau" },
       { property: "og:title", content: "Tiefbau, Erdbau & Abbruch Altenkirchen | FS-BAU GmbH" },
       { property: "og:description", content: "Vier Gewerke aus einer Hand: Tiefbau, Erdbau, Abbruch und GalaBau im Kreis Altenkirchen. Fachlich fundiert, termintreu ausgeführt." },
-      { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/leistungen" },
+      { property: "og:url", content: "https://fs-bau-digital-foundation.vercel.app/leistungen" },
     ],
-    links: [{ rel: "canonical", href: "https://westerwald-builder-pro.lovable.app/leistungen" }],
+    links: [{ rel: "canonical", href: "https://fs-bau-digital-foundation.vercel.app/leistungen" }],
   }),
   component: ServicesPage,
 });
@@ -86,7 +86,7 @@ const SERVICES: Service[] = [
     title: "Abbruch",
     icon: Hammer,
     image: heroAbbruch,
-    lead: "Selektiver Rückbau, Entkernung und fachgerechte Entsorgung — sauber dokumentiert.",
+    lead: "Selektiver Rückbau, Entkernung und fachgerechte Entsorgung — lückenlos dokumentiert.",
     description: [
       "Vom kleinen Nebengebäude bis zum Gewerbeobjekt: Wir führen Abbrucharbeiten kontrolliert und nach den Vorgaben der Gewerbeabfallverordnung aus. Selektiver Rückbau ist für uns Standard — Wertstoffe werden direkt auf der Baustelle getrennt, dokumentiert und einer hohen Verwertungsquote zugeführt.",
       "Vor dem Abbruch erfolgt eine Schadstofferkundung. Bei belasteten Bauteilen arbeiten wir mit zertifizierten Sanierungsfachbetrieben zusammen und übernehmen die Koordination. So bleibt der Bauablauf auch bei Bestandsobjekten planbar.",

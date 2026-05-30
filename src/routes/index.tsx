@@ -31,9 +31,9 @@ export const Route = createFileRoute("/")({
       { name: "keywords", content: "Tiefbau Altenkirchen, Tiefbauunternehmen Westerwald, Kanalbau Altenkirchen, Erdbau, Abbruch, GalaBau, Meisterbetrieb" },
       { property: "og:title", content: "Tiefbau Altenkirchen | Erdbau & Abbruch | FS-BAU GmbH" },
       { property: "og:description", content: "Tiefbau, Erdbau, Abbruch und GalaBau aus dem Kreis Altenkirchen. Präzise geplant, termintreu ausgeführt — regional und überregional." },
-      { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/" },
+      { property: "og:url", content: "https://fs-bau-digital-foundation.vercel.app/" },
     ],
-    links: [{ rel: "canonical", href: "https://westerwald-builder-pro.lovable.app/" }],
+    links: [{ rel: "canonical", href: "https://fs-bau-digital-foundation.vercel.app/" }],
   }),
   component: HomePage,
 });
@@ -89,7 +89,7 @@ function HomePage() {
               {[
                 { k: "Meisterbetrieb", v: "geprüfte Bauleitung" },
                 { k: "Region", v: "Altenkirchen + überregional" },
-                { k: "4 Gewerke", v: "aus einer Hand" },
+                { k: "Vier Gewerke", v: "aus einer Hand" },
                 { k: "Termintreu", v: "verlässlich geliefert" },
               ].map((s) => (
                 <div key={s.k}>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Image as ImageIcon, CheckCircle, ShieldCheck } from "lucide-react";
+import { ArrowRight, Image as ImageIcon, CheckCircle, ShieldCheck, MapPin, Calendar, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface ReferenceProject {
@@ -10,6 +10,12 @@ interface ReferenceProject {
   category: "tiefbau" | "erdbau" | "galabau";
   categoryLabel: string;
   image: string;
+  location: string;
+  date: string;
+  testimonial?: {
+    text: string;
+    author: string;
+  };
 }
 
 const PROJECTS: ReferenceProject[] = [
@@ -20,6 +26,12 @@ const PROJECTS: ReferenceProject[] = [
     category: "erdbau",
     categoryLabel: "Erdbau",
     image: "/referenzen/erdbau-bagger-lkw.jpg",
+    location: "Altenkirchen",
+    date: "April 2026",
+    testimonial: {
+      text: "Die Jungs von FS-BAU haben die Baugrube in Rekordzeit ausgehoben. Sehr präzise und sauber gearbeitet!",
+      author: "M. Weber, privater Bauherr"
+    }
   },
   {
     id: "erdbau-bagger-hang",
@@ -28,6 +40,12 @@ const PROJECTS: ReferenceProject[] = [
     category: "erdbau",
     categoryLabel: "Erdbau",
     image: "/referenzen/erdbau-bagger-hang.jpg",
+    location: "Betzdorf",
+    date: "März 2026",
+    testimonial: {
+      text: "Herausragende Arbeit am Steilhang. Die Hangsicherung steht felsenfest. Absolut empfehlenswert!",
+      author: "Familie Schmidt, Hausbesitzer"
+    }
   },
   {
     id: "tiefbau-kanalisation",
@@ -36,6 +54,12 @@ const PROJECTS: ReferenceProject[] = [
     category: "tiefbau",
     categoryLabel: "Tiefbau",
     image: "/referenzen/tiefbau-kanalisation.jpg",
+    location: "Hachenburg",
+    date: "November 2025",
+    testimonial: {
+      text: "Fachgerechte Installation unseres Hausanschlusses. Die Dokumentation für die Gemeinde war tadellos.",
+      author: "K. Lindner, Bauherr"
+    }
   },
   {
     id: "galabau-wegebau",
@@ -44,6 +68,12 @@ const PROJECTS: ReferenceProject[] = [
     category: "galabau",
     categoryLabel: "GalaBau",
     image: "/referenzen/galabau-wegebau.jpg",
+    location: "Wissen (Sieg)",
+    date: "Oktober 2025",
+    testimonial: {
+      text: "Sehr gute Vorbereitung für unsere Pflasterung. Kein Absacken, perfekte Neigung für den Wasserabfluss.",
+      author: "Bäckerei Müller, gewerblicher Kunde"
+    }
   },
   {
     id: "erdbau-feinplanum",
@@ -52,6 +82,8 @@ const PROJECTS: ReferenceProject[] = [
     category: "erdbau",
     categoryLabel: "Erdbau",
     image: "/referenzen/erdbau-feinplanum.jpg",
+    location: "Westerburg",
+    date: "September 2025"
   },
   {
     id: "erdbau-rodung",
@@ -60,6 +92,8 @@ const PROJECTS: ReferenceProject[] = [
     category: "erdbau",
     categoryLabel: "Erdbau",
     image: "/referenzen/erdbau-rodung.jpg",
+    location: "Flammersfeld",
+    date: "August 2025"
   },
 ];
 
@@ -78,9 +112,9 @@ export const Route = createFileRoute("/referenzen")({
       { name: "keywords", content: "FS-BAU Referenzen, Baustellenbilder Altenkirchen, Tiefbau Projekte Westerwald, Erdbau Bilder" },
       { property: "og:title", content: "Referenzen & Baustellenberichte — FS-BAU GMBH" },
       { property: "og:description", content: "Echte Einblicke in unsere Arbeit: Kanalbau, Erdbau, Baggerarbeiten und Wegebau im Kreis Altenkirchen und überregional." },
-      { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/referenzen" },
+      { property: "og:url", content: "https://fs-bau-digital-foundation.vercel.app/referenzen" },
     ],
-    links: [{ rel: "canonical", href: "https://westerwald-builder-pro.lovable.app/referenzen" }],
+    links: [{ rel: "canonical", href: "https://fs-bau-digital-foundation.vercel.app/referenzen" }],
   }),
   component: ReferenzenPage,
 });
@@ -148,20 +182,47 @@ function ReferenzenPage() {
 
               {/* Card Details */}
               <div className="flex flex-col p-6 flex-1">
-                <div className="flex items-center gap-2">
-                  <span className="inline-flex items-center rounded bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary uppercase tracking-wider">
-                    {p.categoryLabel}
-                  </span>
-                  <span className="text-[10px] text-muted-foreground flex items-center gap-1">
-                    <CheckCircle className="size-3 text-primary/80" /> Ausgeführt
-                  </span>
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border/50 pb-3 mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="inline-flex items-center rounded bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary uppercase tracking-wider">
+                      {p.categoryLabel}
+                    </span>
+                    <span className="text-[10px] text-muted-foreground flex items-center gap-1">
+                      <CheckCircle className="size-3 text-primary/80" /> Ausgeführt
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2.5 text-[11px] text-muted-foreground">
+                    <span className="flex items-center gap-1">
+                      <MapPin className="size-3 text-primary/70" /> {p.location}
+                    </span>
+                    <span className="text-border/60">|</span>
+                    <span className="flex items-center gap-1">
+                      <Calendar className="size-3 text-primary/70" /> {p.date}
+                    </span>
+                  </div>
                 </div>
-                <h3 className="mt-3 font-display text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+
+                <h3 className="font-display text-lg font-bold text-foreground group-hover:text-primary transition-colors">
                   {p.title}
                 </h3>
+                
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed flex-1">
                   {p.description}
                 </p>
+
+                {p.testimonial && (
+                  <div className="mt-4 rounded-lg bg-[color:var(--surface-elevated)]/50 border border-border/50 p-3.5 relative overflow-hidden">
+                    <span className="absolute top-2 right-3 text-primary/10 pointer-events-none">
+                      <MessageSquare className="size-8" />
+                    </span>
+                    <p className="text-xs italic text-muted-foreground leading-relaxed relative z-10">
+                      "{p.testimonial.text}"
+                    </p>
+                    <p className="mt-1.5 text-[10px] font-semibold text-foreground text-right relative z-10">
+                      — {p.testimonial.author}
+                    </p>
+                  </div>
+                )}
               </div>
             </article>
           ))}

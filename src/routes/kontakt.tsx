@@ -11,9 +11,9 @@ export const Route = createFileRoute("/kontakt")({
       { name: "keywords", content: "Tiefbau Altenkirchen Kontakt, Tiefbauunternehmen anfragen, Bauanfrage Westerwald" },
       { property: "og:title", content: "Tiefbau Altenkirchen anfragen — FS-BAU GmbH" },
       { property: "og:description", content: "Direkte Anfrage an den Meisterbetrieb FS-BAU für Tiefbau, Erdbau, Abbruch und GalaBau im Kreis Altenkirchen." },
-      { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/kontakt" },
+      { property: "og:url", content: "https://fs-bau-digital-foundation.vercel.app/kontakt" },
     ],
-    links: [{ rel: "canonical", href: "https://westerwald-builder-pro.lovable.app/kontakt" }],
+    links: [{ rel: "canonical", href: "https://fs-bau-digital-foundation.vercel.app/kontakt" }],
   }),
   component: ContactPage,
 });
@@ -25,7 +25,7 @@ function ContactPage() {
         <div className="container-page py-16 md:py-20">
           <p className="text-xs uppercase tracking-[0.2em] text-primary">Kontakt</p>
           <h1 className="mt-2 font-display text-4xl md:text-5xl font-bold max-w-3xl">
-            Tiefbau in Altenkirchen anfragen.
+            Ihr Tiefbauprojekt im Westerwald — jetzt anfragen.
           </h1>
           <p className="mt-5 max-w-2xl text-muted-foreground text-lg leading-relaxed">
             Beschreiben Sie kurz Ihr Vorhaben — Projekttyp, gewünschte Leistung

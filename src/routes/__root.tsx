@@ -70,7 +70,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 
 const ORG_JSONLD = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "GeneralContractor",
   name: "FS-BAU GmbH",
   description:
     "Meisterbetrieb für Tiefbau, Erdbau, Abbruch und Garten- und Landschaftsbau (GalaBau) im Kreis Altenkirchen / Westerwald.",
@@ -84,6 +84,18 @@ const ORG_JSONLD = {
   },
   telephone: SITE.phone,
   email: SITE.email,
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+    ],
+    opens: "07:30",
+    closes: "17:00",
+  },
 };
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({

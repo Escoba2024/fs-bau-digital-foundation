@@ -10,9 +10,9 @@ export const Route = createFileRoute("/ueber-uns")({
       { name: "keywords", content: "Tiefbau Altenkirchen, Tiefbaubetrieb Westerwald, Meisterbetrieb FS-BAU, Bauunternehmen Altenkirchen" },
       { property: "og:title", content: "Über uns — Meisterbetrieb für Tiefbau in Altenkirchen" },
       { property: "og:description", content: "Werte, Qualifikationen und Einsatzgebiet des Meisterbetriebs FS-BAU GmbH für Tiefbau im Kreis Altenkirchen." },
-      { property: "og:url", content: "https://westerwald-builder-pro.lovable.app/ueber-uns" },
+      { property: "og:url", content: "https://fs-bau-digital-foundation.vercel.app/ueber-uns" },
     ],
-    links: [{ rel: "canonical", href: "https://westerwald-builder-pro.lovable.app/ueber-uns" }],
+    links: [{ rel: "canonical", href: "https://fs-bau-digital-foundation.vercel.app/ueber-uns" }],
   }),
   component: AboutPage,
 });
@@ -43,10 +43,7 @@ function AboutPage() {
             örtlichen Behörden — überregional bringen wir denselben Anspruch auf jede Baustelle mit.
           </p>
           <p>
-            Unser Selbstverständnis ist handwerklich: Wer den Boden bewegt, Wasser ableitet oder
-            ein Haus zurückbaut, übernimmt Verantwortung. Diese Verantwortung tragen wir mit
-            qualifizierten Eigenmitarbeitern, geprüfter Bauleitung und einem modernen Maschinenpark.
-            Versprochen wird, was gehalten werden kann — auch beim Termin.
+            Unsere Grundlage ist handwerkliche Qualifikation: qualifizierte Eigenmitarbeiter, geprüfte Bauleitung und ein moderner Maschinenpark. Versprochen wird, was gehalten werden kann — auch beim Termin.
           </p>
           <p>
             FS-BAU steht für saubere Dokumentation, transparente Kommunikation und Bauausführung
