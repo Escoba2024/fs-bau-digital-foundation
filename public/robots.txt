@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://westerwald-builder-pro.lovable.app/sitemap.xml
