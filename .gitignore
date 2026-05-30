@@ -33,3 +33,7 @@ dist-ssr
 
 # Scratch directory
 scratch/
+
+# Vercel
+.vercel/
+.vercel
